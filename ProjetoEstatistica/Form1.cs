@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjetoEstatistica
 {
-    public partial class Form1 : Form
+    public partial class frmEstatistica : Form
     {
-        public Form1()
+        public frmEstatistica()
         {
             InitializeComponent();
         }
 
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+              
+        }
     }
 }
