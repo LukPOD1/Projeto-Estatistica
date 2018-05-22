@@ -43,7 +43,7 @@
             this.rdPriQuartil = new System.Windows.Forms.RadioButton();
             this.rdTerQuartil = new System.Windows.Forms.RadioButton();
             this.txtMedia = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDesvioPadrao = new System.Windows.Forms.TextBox();
             this.txtMediana = new System.Windows.Forms.TextBox();
             this.txtPriQuartil = new System.Windows.Forms.TextBox();
             this.txtTerQuartil = new System.Windows.Forms.TextBox();
@@ -53,7 +53,7 @@
             this.txtSegQuartil = new System.Windows.Forms.TextBox();
             this.txtSimetria = new System.Windows.Forms.TextBox();
             this.rdSimetria = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.numProbabilidade = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtProbabilidade = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -127,6 +127,7 @@
             this.btnLimpar.TabIndex = 11;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // rdMedia
             // 
@@ -190,12 +191,12 @@
             this.txtMedia.Size = new System.Drawing.Size(100, 20);
             this.txtMedia.TabIndex = 31;
             // 
-            // textBox4
+            // txtDesvioPadrao
             // 
-            this.textBox4.Location = new System.Drawing.Point(124, 271);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 33;
+            this.txtDesvioPadrao.Location = new System.Drawing.Point(124, 271);
+            this.txtDesvioPadrao.Name = "txtDesvioPadrao";
+            this.txtDesvioPadrao.Size = new System.Drawing.Size(100, 20);
+            this.txtDesvioPadrao.TabIndex = 33;
             // 
             // txtMediana
             // 
@@ -272,12 +273,12 @@
             this.rdSimetria.Text = "Simetria";
             this.rdSimetria.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // numProbabilidade
             // 
-            this.textBox1.Location = new System.Drawing.Point(247, 316);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(88, 20);
-            this.textBox1.TabIndex = 52;
+            this.numProbabilidade.Location = new System.Drawing.Point(247, 316);
+            this.numProbabilidade.Name = "numProbabilidade";
+            this.numProbabilidade.Size = new System.Drawing.Size(88, 20);
+            this.numProbabilidade.TabIndex = 52;
             // 
             // label1
             // 
@@ -312,6 +313,7 @@
             this.btnProbabilidade.TabIndex = 56;
             this.btnProbabilidade.Text = "Probabilidade";
             this.btnProbabilidade.UseVisualStyleBackColor = true;
+            this.btnProbabilidade.Click += new System.EventHandler(this.btnProbabilidade_Click);
             // 
             // frmEstatistica
             // 
@@ -322,7 +324,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtProbabilidade);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.numProbabilidade);
             this.Controls.Add(this.rdSimetria);
             this.Controls.Add(this.txtSimetria);
             this.Controls.Add(this.txtSegQuartil);
@@ -332,7 +334,7 @@
             this.Controls.Add(this.txtTerQuartil);
             this.Controls.Add(this.txtPriQuartil);
             this.Controls.Add(this.txtMediana);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtDesvioPadrao);
             this.Controls.Add(this.txtMedia);
             this.Controls.Add(this.rdTerQuartil);
             this.Controls.Add(this.rdPriQuartil);
@@ -372,7 +374,7 @@
         private System.Windows.Forms.RadioButton rdPriQuartil;
         private System.Windows.Forms.RadioButton rdTerQuartil;
         private System.Windows.Forms.TextBox txtMedia;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDesvioPadrao;
         private System.Windows.Forms.TextBox txtMediana;
         private System.Windows.Forms.TextBox txtPriQuartil;
         private System.Windows.Forms.TextBox txtTerQuartil;
@@ -382,7 +384,7 @@
         private System.Windows.Forms.TextBox txtSegQuartil;
         private System.Windows.Forms.TextBox txtSimetria;
         private System.Windows.Forms.RadioButton rdSimetria;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox numProbabilidade;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtProbabilidade;
         private System.Windows.Forms.Label label2;
