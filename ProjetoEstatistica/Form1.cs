@@ -218,11 +218,15 @@ namespace ProjetoEstatistica
 
             double num2 = Math.Pow(((num - media) / desvioPadrao), 2);
 
-            double numE = (-1 / 2) * num2;
+            double num3 = (-1 / 2) * num2;
 
-            double prob = 1 / Math.Sqrt(2 * Math.PI) * numE;
+            double numE = Math.Pow((1 + 1 / 7), 7);
 
-            txtProbabilidade.Text = prob.ToString();    
+            numE = Math.Pow(numE, num3);
+
+            double prob = 1 / desvioPadrao * Math.Sqrt(2 * Math.PI) * numE;
+
+            txtProbabilidade.Text = prob.ToString();
 
         }
     }
